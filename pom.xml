@@ -33,7 +33,7 @@
     <modules>
         <module>app-mem-basic</module>
         <module>ldap-customform</module>
-
+        <module>ldapform-jsf</module>
     </modules>
 
 </project>

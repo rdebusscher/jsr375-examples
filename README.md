@@ -13,3 +13,13 @@ More realistic scenario using a custom login form (Using PrimeFaces) and authent
 External LDAP is configured by the CDI definition annotation in the Servlet class.
 
 Example LDAP entries can be found within _apacheDS_JCP.ldif_
+
+## ldapform-jsf
+
+Same as previous but now the protected resource is a JSF page, not a servlet.
+
+Additional config is made within web.xml to define the protected and free accessible pages.
+
+On GlassFish 5.0, there is an Internal Server Error with no explanation.
+
+Therefor a EE7 profile is created in Maven so that the application runs on WildFly 10+

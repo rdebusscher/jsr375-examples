@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<!--
+
+    Copyright 2017 Rudy De Busscher
+
+    Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
+
+        http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
+
+-->
+<html lang="en"
+      xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:p="http://primefaces.org/ui"
+>
+<h:head/>
+
+<h:messages/>
+
+<h:body>
+    <p>
+        Login to continue
+    </p>
+
+    <h:form>
+        <p>
+            <p:outputLabel for="username" value="User name :"/>
+            <p:inputText id="username" value="#{loginBacking.username}"/>
+        </p>
+
+        <p>
+            <p:outputLabel for="password" value="Password :"/>
+            <p:password id="password" value="#{loginBacking.password}" feedback="false"/>
+
+        </p>
+        <p>
+            <p:commandButton value="login" ajax="false" actionListener="#{loginBacking.login}"/>
+        </p>
+    </h:form>
+
+</h:body>
+
+</html>
