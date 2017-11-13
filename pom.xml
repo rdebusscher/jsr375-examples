@@ -32,6 +32,7 @@
 
     <modules>
         <module>app-mem-basic</module>
+        <module>ldap-customform</module>
 
     </modules>
 

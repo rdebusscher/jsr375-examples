@@ -1,0 +1,56 @@
+version: 1
+
+dn: dc=example,dc=com
+objectclass: top
+objectclass: domain
+dc: example
+
+dn: ou=group,dc=example,dc=com
+objectClass: organizationalUnit
+objectClass: top
+ou: group
+
+dn: cn=devgroup3,ou=group,dc=example,dc=com
+objectClass: groupOfNames
+objectClass: top
+cn: devgroup3
+member: uid=rudy,ou=caller,dc=example,dc=com
+
+dn: ou=caller,dc=example,dc=com
+objectClass: organizationalUnit
+objectClass: top
+ou: caller
+
+dn: uid=rudy,ou=caller,dc=example,dc=com
+objectClass: uidObject
+objectClass: person
+objectClass: top
+cn: rudy
+sn: Rudy De Busscher
+uid: rudy
+userPassword:: e1NTSEF9Z1Y0L3F2c1JXdVBSN04xc0hobExCa0RhdmRMTU5DbnA4NHZoNGc9P
+ Q==
+
+dn: uid=reza,ou=caller,dc=example,dc=com
+objectClass: uidObject
+objectClass: person
+objectClass: top
+cn: reza
+sn: Reza Rahman
+uid: reza
+userPassword:: e1NTSEF9bEx3Wk5yOTJ4UHM2dHh4OFI5RElHSHJtc1I3YXEwUmJGNnJ1cWc9P
+ Q==
+
+dn: cn=devgroup1,ou=group,dc=example,dc=com
+objectClass: groupOfNames
+objectClass: top
+cn: devgroup1
+member: uid=rudy,ou=caller,dc=example,dc=com
+
+dn: cn=devgroup2,ou=group,dc=example,dc=com
+objectClass: groupOfNames
+objectClass: top
+cn: devgroup2
+member: uid=reza,ou=caller,dc=example,dc=com
+member: uid=rudy,ou=caller,dc=example,dc=com
+
