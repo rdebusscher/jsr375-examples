@@ -37,3 +37,19 @@ This is an example of custom implementations for HttpAuthenticationMechanism, Id
 * CustomIdentityStoreHandler -> Custom implementation which loops over all IdentityStores doing authentication so implement a 'black list'. See also BlackListedIdentityStore and beans.xml
 
 Runs fine on GlassFish 5.0
+
+## jwt for JAX-RS endpoint
+
+This example protects JAX-RS endpoints by JWT Bearer tokens.
+
+Code and example can be found in the [Atbash JSR375 extensions repository](https://github.com/atbashEE/jsr375-extensions).
+
+There is an issue on my machine with the JAX-RS endpoints on GlassFish 5.0. Therefor a EE7 profile is created in Maven so that the application runs on WildFly 10+.
+
+## OAuth2 authentication for JSF application
+
+POC for the usage of an OAuth2 provider (Google) for retrieving the end user information.
+
+Code and example can be found in the [Atbash JSR375 extensions repository](https://github.com/atbashEE/jsr375-extensions).
+
+There is an issue on GlassFish 5.0 with custom Principals (which needs to be allowed according to the JSR-375 spec). Therefor a EE7 profile is created in Maven so that the application runs on WildFly 10+.
