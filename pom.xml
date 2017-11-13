@@ -35,6 +35,7 @@
         <module>ldap-customform</module>
         <module>ldapform-jsf</module>
         <module>multiple-store</module>
+        <module>app-db</module>
     </modules>
 
 </project>

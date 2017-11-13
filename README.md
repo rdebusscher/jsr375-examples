@@ -53,3 +53,11 @@ POC for the usage of an OAuth2 provider (Google) for retrieving the end user inf
 Code and example can be found in the [Atbash JSR375 extensions repository](https://github.com/atbashEE/jsr375-extensions).
 
 There is an issue on GlassFish 5.0 with custom Principals (which needs to be allowed according to the JSR-375 spec). Therefor a EE7 profile is created in Maven so that the application runs on WildFly 10+.
+
+## app-db
+
+Extracted the _app-db_ example from the Soteria repository https://github.com/javaee/security-soteria/tree/master/test/app-db and removed the 'dynamic' configuration aspects (EL within configuration annotation)
+
+Contains example of using Pbkdf2 password hashing algorithm.
+
+Runs fine on GlassFish 5.0
