@@ -34,6 +34,7 @@
         <module>app-mem-basic</module>
         <module>ldap-customform</module>
         <module>ldapform-jsf</module>
+        <module>multiple-store</module>
     </modules>
 
 </project>
